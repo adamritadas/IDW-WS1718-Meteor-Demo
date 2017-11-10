@@ -6,9 +6,14 @@ Router.configure({
 
 
 //Home page
-//Router.route('/', function () {
- //this.render('Home');
-//});
+Router.route('/', function () {
+this.render('login');
+});
+
+//******************REGISTER PAGE ROUTE**********************
+Router.route('/Register/register', function() {
+  this.render('register');
+});
 
 //*******************LOGIN PAGE ROUTE*********************
 Router.route('/login', function() {
@@ -19,7 +24,7 @@ Router.route('/login', function() {
 
 //***************************************ARTICLE PAGE ROUTES*************************************************
 //Article Home
-Router.route('/ArticleHome/ArticleHome',function(){
+Router.route('/Articles',function(){
 this.render('ArticleHome')
 });
 

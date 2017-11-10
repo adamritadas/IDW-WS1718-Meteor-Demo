@@ -15,7 +15,7 @@ Template.login.events({
             else {
               var loginroute= Router.current().route.getName();
               if(loginroute=='login')
-              Router.go('/');
+              Router.go('/Articles');
             }
 
         });
