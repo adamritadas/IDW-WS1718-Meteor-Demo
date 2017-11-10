@@ -1,0 +1,87 @@
+<head>
+  <title></title>
+</head>
+
+<body>
+<style>
+
+.login {
+ margin-top: 10px;
+}
+
+
+.col-md-4 {
+    margin-right:200px;
+}
+
+.loginui {
+  background: #efefef;
+
+  background-image: url("https://trace.theprotag.com/public/src/assets/images/pages-bg.jpg");
+
+  font-family: 'Varela Round';
+}
+</style>
+
+</body>
+
+
+<template name="login">
+{{> centerheader}}
+  <div class="container loginui">
+    <br><br><br><br><br><br>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          {{> flashMessages}}
+          <div class="login-form-1">
+            <form class="login-form text-left">
+              <div class="login-form-main-message"></div>
+              <div class="main-login-form">
+                <div class="login-group">
+                  <div class="form-group">
+                    <label for="email" class="sr-only">email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <div class="col-xs-5"></div>
+                  <div class="col-xs-2" style="margin-left:-10px;">
+                  <button type="submit" class="btn btn-default">Login</button>
+                  </div>
+                  <div class="col-xs-5"></div>
+                </div>
+              </div>
+              <br>  <br> <br>
+
+              {{> forgotPassword}}
+              
+            </form>
+          </div>
+
+
+        </div>
+    </div>
+    <br><br><br><br><br>
+</div>
+<br>
+</template>
+<template name="forgotPassword">
+  <form>
+    <div class="etc-login-form">
+
+                  <div class="col-xs-1"></div>
+                  <div class="col-xs-10" style="margin-left: 30px;color: white;">
+                    <p>forgot your password? <a href="/404error" type="submit" class="forgotpassword">click here</a></p>
+                    <p>new user? <a href="/Register/register">create new account</a></p>
+                    {{> loginButtons}} 
+                  </div>
+                  <div class="col-xs-1"></div>
+
+              </div>
+  </form>
+</template>
